@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celulares</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<!-- parrafo lista tabla imagen -->
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+
+    header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+
+    nav {
+        float: left;
+        width: 20%;
+        background: #ccc;
+        padding: 20px;
+        min-height: 100vh;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    article {
+        float: left;
+        width: 80%;
+        background-color: #f1f1f1;
+        padding: 10px;
+    }
+
+
+    footer {
+        clear: both;
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    @media (max-width: 600px) {
+        section {
+            -webkit-flex-direction: column;
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Bienvenidos a mi pagina de Celulares</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <article>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Aquí encontrarás una amplia variedad de modelos, desde los últimos lanzamientos hasta opciones para todos
+                los
+                presupuestos. Nuestra misión es ayudarte a elegir el smartphone perfecto que se adapte a tus
+                necesidades,
+                ofreciéndote información clara, comparativas actualizadas y las mejores ofertas. ¡Descubre con nosotros
+                la
+                tecnología que te conecta con el mundo!</p>
+        </section>
+
+
+        <section id="acerca">
+            <h2>Acerca de</h2>
+            <p>En nuestra pagina somos apasionados por la tecnología y los celulares. Nuestro objetivo es brindarte
+                información confiable, actualizada y detallada sobre los últimos modelos y tendencias en smartphones.
+                Creemos que elegir un celular no debe ser complicado, por eso te ofrecemos reseñas, comparativas y
+                consejos
+                para que tomes la mejor decisión. Estamos comprometidos con la calidad y la satisfacción de nuestros
+                usuarios, ayudándote a estar siempre conectado con lo mejor en tecnología móvil.</p>
+        </section>
+
+
+        <section id="productos">
+            <h1>PRODUCTOS DISPONIBLES</h1>
+
+            <ul>
+                <li>Alta conectividad</li>
+                <li>Diseño moderno</li>
+                <li>Cámaras de alta calidad</li>
+                <li>Amplia variedad de modelos</li>
+            </ul>
+
+
+            <p>Los celulares han revolucionado la comunicación y el acceso a la información. Marcas como iPhone, Xiaomi
+                y
+                Samsung lideran el mercado ofreciendo dispositivos con tecnología avanzada, diseño innovador y variadas
+                funciones. Mientras iPhone destaca por su sistema operativo iOS y ecosistema integrado, Xiaomi ofrece
+                una
+                excelente relación calidad-precio con características competitivas, y Samsung se reconoce por sus
+                pantallas
+                de alta calidad y variedad de modelos para distintos usuarios.</p>
+
+            <table>
+                <tr>
+                    <th>Celulares</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                </tr>
+                <tr>
+                    <td>iPhone</td>
+                    <td>Último modelo con iOS 16</td>
+                    <td>$999 USD</td>
+                    <td><img style="width: 50px;" src="img/iphone.png" alt="iPhone"></td>
+
+                </tr>
+                <tr>
+                    <td>Xiaomi</td>
+                    <td>Smartphone con gran cámara</td>
+                    <td>$399 USD</td>
+                    <td><img style="width: 50px;" src="img/xiaomi.png" src="" alt="Xiaomi"></td>
+                </tr>
+                <tr>
+                    <td>Samsung</td>
+                    <td>Teléfono con pantalla AMOLED</td>
+                    <td>$699 USD</td>
+                    <td><img style="width: 50px;" src="img/Samsung.png" src="" alt="Samsung"></td>
+                </tr>
+            </table>
+
+    </article>
+    </section>
+    <footer>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>
+                Arturo Falconí <br> Tel: 0987654321 <br>
+                <a href="mailto:jafalconi3@espe.edu.ec">jafalconi3@espe.edu.ec</a>
+                <br>
+                <a>TODOS LOS DERECHOS RESERVADOS</a>
+            </p>
+        </section>
+    </footer>
+</body>
+
+</html>
