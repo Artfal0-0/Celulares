@@ -63,6 +63,24 @@
             flex-direction: column;
         }
     }
+
+    .form {
+        display: grid;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .phones {
+        border: 2px solid black;
+        padding: 20px;
+    }
+
+    /* botones del form de usuarios */
+    .btn {
+        display: inline-block;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
 </style>
 
 <body>
@@ -160,11 +178,44 @@
             <!-- para mutearlo, poner "?autoplay=1&mute=1" al final -->
             <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
             </iframe>
+            <br>
+            <!-- checkboxes para seleccion de celulares -->
+            <div class="phones">
+                <form>
+                    <input type="radio" id="iPhone" name="fav_phone" value="iPhone">
+                    <label for="iPhone">iPhone</label><br>
+                    <input type="radio" id="Samsung" name="fav_phone" value="Samsung">
+                    <label for="Samsung">Samsung</label><br>
+                    <input type="radio" id="Xiaomi" name="fav_phone" value="Xiaomi">
+                    <label for="Xiaomi">Xiaomi</label>
+                </form>
+                <hr>
+                <form>
+                    <input type="checkbox" id="phone1" name="vehicle1" value="iPhone">
+                    <label for="phone1"> I have a iPhone</label><br>
+                    <input type="checkbox" id="phone2" name="vehicle2" value="Samsung">
+                    <label for="phone2"> I have a Samsung</label><br>
+                    <input type="checkbox" id="phone3" name="vehicle3" value="Xiaomi">
+                    <label for="phone3"> I have a Xiaomi</label>
+                </form>
+            </div>
+            <!-- Ingresar datos de usuarios -->
+            <h2>Contacta con nosotros</h2>
+            <form class="form">
+                <label for="fname">Nombre:</label>
+                <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre">
+                <label for="lname">Apellido:</label>
+                <input type="text" id="lname" name="lname" placeholder="Ingrese su apellido">
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su email">
+                <br>
+                <input type="submit" value="Enviar" class="btn">
+                <input type="reset" value="Reiniciar" class="btn">
+            </form>
     </article>
     </section>
     <footer>
         <section id="contacto">
-            <h2>Contacto</h2>
             <p>
                 Arturo Falconí <br> Tel: 0987654321 <br>
                 <a href="mailto:jafalconi3@espe.edu.ec">jafalconi3@espe.edu.ec</a>
